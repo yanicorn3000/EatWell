@@ -920,6 +920,10 @@ html {
   overflow: hidden;
 }
 
+.newsletter:focus {
+  border: 1px solid var(--accent-color-1);
+}
+
 .newsletter-button {
   padding: 5px 10px;
   background-color: var(--secondary-color);
@@ -934,7 +938,12 @@ html {
 }
 
 .newsletter-button:hover {
-  background-color: var(--accent-color-2);
+  background: var(--primary-color);
+  background: linear-gradient(
+    0deg,
+    var(--primary-color) 0%,
+    var(--accent-color-1) 100%
+  );
   color: var(--light-text-color);
 }
 
